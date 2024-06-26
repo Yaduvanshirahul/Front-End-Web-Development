@@ -1,0 +1,30 @@
+/* 
+    universal selector
+{
+    font-family: fantasy;
+} 
+    */
+    
+    body{
+    font-size: 30px;
+}
+
+#first, #second{
+    color: green;
+}
+
+.purple{
+    
+    font-family:  monospace;
+}
+
+.highlight{
+    background-color: grey;
+    font-weight: 200;
+} 
+
+/* 
+      Specificy Order :
+  
+      id>class>element 
+*/

@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: auto;
+}
+
+.box{
+    height: 200px;
+    width: 200px;
+    border: 20px solid red;
+
+    padding: 30px ;
+    /* padding is used to separate the element from its border */
+    margin: 40px; 
+    /* margin is used to separate the element from another element of doc. */
+}
