@@ -9,15 +9,20 @@
     font-size: 30px;
 }
 
+/* combining group and id  selectors */
+
 #first, #second{
     color: green;
 }
+
+/* class selector */
 
 .purple{
     
     font-family:  monospace;
 }
 
+/* 
 .highlight{
     background-color: grey;
     font-weight: 200;
