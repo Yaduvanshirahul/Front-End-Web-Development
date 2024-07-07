@@ -1,0 +1,64 @@
+*{
+    margin: 0px;
+    padding: 0px;
+
+}
+.container{
+
+    background-color: blue;
+    height: 1700px;
+    width: 900px;
+
+    /* display:grid is used to make the container used as grid */
+    display: grid;
+
+    /*  grid-template-rows and columns :  is used to represent the no. of rows want to used in container */
+
+    grid-template-columns: 133px 133px 133px;
+    grid-template-rows: 133px 133px 133px;
+
+    /* grid-template-colums and rows: repeat(3,1fr) is used in place of above to utilize all the space of container to create a grid */
+
+    grid-template-columns: repeat(3,1fr);
+    /* also can write as grid-template-rows:1fr 1fr 1fr */
+    grid-template-rows: 133px 1fr 1fr;
+    /* row-gap and column-gap is used to define gap between the elements  */
+
+    row-gap: 12px;
+    column-gap: 12px;
+
+    /* justify-items is used to justify the elements of container  */
+    justify-items: start;
+
+
+}
+
+.items{
+
+background-color: red;
+height: 122px;
+width: 122px;
+
+}
+
+.header{
+
+    /* grid-colums-start and end is used to merge the line grid */
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color:orange;
+
+    /* width use to make header utilize all the space of row */
+    width: 100%;
+}
+
+.footer{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    background-color: palegreen;
+    width: 100%;
+}
+
+.item3{
+    justify-self:center ;
+}
