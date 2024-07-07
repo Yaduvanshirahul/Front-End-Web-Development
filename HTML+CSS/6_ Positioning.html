@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+<!-- In CSS there are five types of positiong: static(default),absolute,relative,fixed,sticky -->
+    <style>
+        .container{
+            border: 2px solid black;
+            background-color: green;
+            position: relative;
+            height: 3440px;
+            /* Here we set position of container as relative for make as parent for other box */
+        }
+        .box{
+            display: inline-block;
+            border: 2px solid blue;
+            width: 150px;
+            height: 150px;
+            margin: 2px;
+        }
+        #box3{
+
+            position: relative;
+
+            /* position : (relative) to its normal position and will leave a gap at its normal position  */
+
+            
+            position: absolute;
+
+            /* position: (absolute) related to the position of its first parent */
+         
+            /* 
+            top: 24px; 
+            left: 130px; */
+
+
+            /* position: static;
+            
+            it is a default value for position
+          */
+
+            position: fixed;
+            right: 10px;
+            bottom: 2px;
+
+            /* position: (fixed) position the element relative to the browser window */
+
+            position: sticky;
+            top: 3px;
+            
+
+        }
+    </style>
+</head>
+<body>
+    <!-- Here we use div as a parent for the box 1,2,3,4 -->
+    <div class="container"> 
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+    
+
+</body>
+</html>
