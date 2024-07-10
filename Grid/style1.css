@@ -9,6 +9,8 @@
     height: 1700px;
     width: 900px;
 
+    /* if we used display as inline then it treat the container as inline or if we used it as grid then treat as block */
+
     /* display:grid is used to make the container used as grid */
     display: grid;
 
@@ -60,5 +62,11 @@ width: 122px;
 }
 
 .item3{
-    justify-self:center ;
+
+    /* justify-self:center ; */
+    /* align-self:center is used to make content placed at center */
+    /* align-self: center;*/
+
+    /* placed-self:center is combine property of the justify-self and align self */
+     place-self: center;
 }

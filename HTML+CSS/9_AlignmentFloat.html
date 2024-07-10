@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <style>
+    *{
+        box-sizing: border-box;
+    }
+    .container{
+       
+        width: 500px;
+        border: 3px solid green;
+        margin: 33px auto;
+        /* Take marign as 33px (y-axis or top/bottom)auto(x-axis) place the container in center.Take equal distance from left and scroll-margin-right; */
+       background-color: #e87f52;
+    }
+    .item{
+        border: 3px solid gray;
+        margin: 12px 4px;
+        padding: 10px 3px;
+        background: rgb(225, 214, 214);
+
+    }
+
+     
+    #fruit{
+          float: left;
+          width: 48%;
+       }
+
+       #stationary{
+        /* float: left; when we don't use the float:left it will overlap the fruit and computer div. SO remove these we use clear:left/right as per requirment*/
+       
+        clear: both;
+        width: 100%;
+       }
+
+       #computer{
+        float: left;
+        width: 48%;
+       }
+
+       /* Text-align */
+
+       h3, p{
+
+        text-align: left; 
+        /* to align text into left */
+        text-align: right;
+        text-align: center;
+        text-align: justify;
+       }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="fruit" class="item">
+            <h3>Fruits</h3>
+            <p id="fruitspara" class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque optio facilis in dicta libero saepe, excepturi amet, impedit facere ipsum corporis blanditiis quas illo officia! Ipsa illo tenetur, vitae fuga repellendus corporis neque accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat modi dolorum veritatis perspiciatis quos amet natus et, sunt nulla sequi quod a vero officiis incidunt accusantium deserunt velit voluptatum exercitationem. Harum sint veritatis pariatur!</p>
+        </div>
+        <div id="computer" class="item">
+            <h3>Computer Parts</h3>
+            <p id="computerpara" class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque optio facilis in dicta libero saepe, excepturi amet, impedit facere ipsum corporis blanditiis quas illo officia! Ipsa illo tenetur, vitae fuga repellendus corporis neque accusamus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati necessitatibus debitis fuga nam consequuntur quae, ipsa nisi repellendus repudiandae officia unde, sit enim pariatur.</p>
+        </div>
+      
+        <div id="stationary" class="item">
+            <h3>Stationary accessories</h3>
+            <p id="stationary" class="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque optio facilis in dicta libero saepe, excepturi amet, impedit facere ipsum corporis blanditiis quas illo officia! Ipsa illo tenetur, vitae fuga repellendus corporis neque accusamus.</p>
+        </div>
+
+    </div>
+</body>
+</html>
