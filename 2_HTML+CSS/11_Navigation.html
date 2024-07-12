@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+</head>
+<style>
+    .navbar{
+        background-color: aqua;
+        border-radius: 30px;
+    }
+
+    .navbar ul{
+        overflow: auto; /* to overcome the overflow condition of float which occur due to below float:left property */
+    }
+
+    .navbar li{
+        float: left; /* to make the items of list to float in left side
+                        when we float the list then it overflow from the parent such that div so parent background-color property don't show  */
+        list-style: none; /* to remove the bullet sign */
+        margin: 13px 20px; /* it make margin between the items of list */
+    }
+  
+    .navbar li a{
+        padding: 3px 3px;
+        text-decoration: none;  /* to remove underline from (a) tag */
+        color: black;
+
+    }
+
+    .navbar li a:hover{
+        background-color: beige;
+        color: red;
+    }
+
+    .search{
+        padding: 9px 20px;
+        float: right;
+        color: white;
+    }
+
+    .navbar input{
+        border:2px solid black;
+        border-radius: 14px;
+        padding: 5px 6px;
+        width: 140px;
+        
+    }
+
+</style>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact us</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="search this website">
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
