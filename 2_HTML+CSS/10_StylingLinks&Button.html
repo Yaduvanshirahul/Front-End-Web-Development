@@ -19,9 +19,11 @@
             background-color: rgb(214, 191, 141);
             padding: 4px;
             border: none;
-            cursor: pointer; /* to move the cursor to buttton it points on the button */
+            cursor: pointer; /* when move the cursor to buttton it points on the button */
             font-size: 12px;
             border-radius: 4px;
+            font-family:  'Arial Narrow', Arial, sans-serif;
+            font-weight: 800; /* to make the font bold */
         }
         a{
             text-decoration: none; /* to remove the underline from the link */
@@ -33,7 +35,16 @@
         }
 
         a:active{
-            background-color: aqua; /* once click on the button it will show
+            background-color: aqua; /* once click on the button it will show */
+        }
+
+        a:visited{
+            /* background-color: rgb(42,24,233);  it change its background-color once we move to other site by click on it */
+        }
+
+    
+        #btn1:hover{
+            background-color: aquamarine;
         }
     </style>
 </head>
@@ -42,8 +53,8 @@
 
         <h3>This is my heading</h3>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Doloremque delectus iste atque hic quos facilis eum maiores harum itaque totam repellat, quidem officiis ex. Quo pariatur numquam aliquam rerum error.</p>
-        <a class="btn" href=""> Read More</a>
-        <button class="btn">Contact Us</button>
+        <a class="btn" href="https://google.com"> Read More</a>
+        <button class="btn" id="btn1">Contact Us</button>
 
     </div>
 </body>
