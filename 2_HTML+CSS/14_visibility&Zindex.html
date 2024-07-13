@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visibility and z-index</title>
+    <style>
+        .box{
+            width: 150px;
+            height: 130px;
+            border: 2px solid black;
+        }
+
+        #box1{
+
+            /* z-index works when position set is relative,absolute and fixed but not for static(default) */
+
+            position: relative;
+            top: 40px; /* here the box1 some parat is placed below down the box2 */
+            z-index: 36; /* to make the box1 upper of box2 we used z-index so we take value high then box2 position of top:34px*/
+            background-color: rgb(62, 180, 125);
+        }
+        #box2{
+
+
+            position: relative;
+            top: 34px;
+            /* visibility:visible(default) */
+
+           /* / visibility:hidden; hide the element but its place is reserved and show its empty space */
+
+            /* display: none; it doesn't reserved the element  */
+
+            background-color: rgb(181, 144, 85);
+        }
+        #box3{
+            background-color: rgb(125, 49, 88);
+        }
+        #box4{
+            background-color: rgb(72, 72, 177);
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box1"></div>
+    <div class="box" id="box2"></div>
+    <div class="box" id="box3"></div>
+    <div class="box" id="box4"></div>
+</body>
+</html>

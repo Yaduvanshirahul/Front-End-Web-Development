@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning</title>
+    <style>
+        .container{
+            border: 2px solid black;
+            height: 3000px;
+            width: 100%;
+            background-color: aqua;
+
+        }
+
+        /* position: static(default),relative,absolute, fixed, sticky */
+        .box{
+            border: 2px solid red;
+            width: 100px;
+            height: 100px;
+            margin: 2px;
+            padding: 4px;
+            display: inline-block; /* to make all box place in one line */
+        }
+
+        #box3{
+
+            /* relative: relative to its normal position and will leave a gap at its normal position */
+           
+            /* position: relative; if we set position relative then we can set box position top,down,right and left */
+
+            /* left: 23px; */
+            /* top: 12px; */
+
+
+            /* position:absolute position is related to its parent */
+
+            /* position: absolute; */
+            /* left: 12px; */
+            /* top: 23px; */
+
+
+            /* fixed: fixed position is related to the browser window */
+
+            position: fixed;
+            right: 4px;
+            bottom: 10px;
+
+            position:  sticky;
+            top: 23px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="box1" class="box">1</div>
+        <div id="box2" class="box">2</div>
+        <div id="box3" class="box">3</div>
+        <div id="box4" class="box">4</div>
+    </div>
+   
+</body>
+</html>
