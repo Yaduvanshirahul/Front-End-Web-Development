@@ -1,0 +1,54 @@
+<!--  Various ways to Achieve Responsive Design 
+ 1. Setting up the viewport.
+ 2. Use max-width/max-height.
+ 3. Using CSS Media Queries.
+ 4. Using rem/vh/vw units over pixels 
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size units</title>
+    <style>
+
+        html{
+            font-size: 25px;
+        }
+        .container{
+
+             /* width: 310px;*/
+             width: 100vw; /* it will take the viewport size. The size of screen you see */
+
+             /* height: 127px; */
+             height:100vh ; /* it will take the viewport size. The size of screen you see */
+
+             font-size: 10px;  /* here container act as parent for h1. here parent font-size is 10px */
+             border: 2px solid red;
+        }
+        h1{
+            text-align: center;
+        }
+
+        #first{
+            /* font-size: 3em; it take the size of 10x of its parent */
+            /* padding: 3em; here padding take size of 10x of font-size of first heading h1. em is used when parent size is resize so child also resize */
+        }
+
+        #second{
+
+            /* rem unit resize according to our html root element size */
+            /* font-size: 3rem; */
+            /* padding: 3rem; */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="first">this is first heading</h1>
+        <h1 id="second">this is second heading</h1>
+        <h1 id="third">this is third heading</h1>
+    </div>
+</body>
+</html>

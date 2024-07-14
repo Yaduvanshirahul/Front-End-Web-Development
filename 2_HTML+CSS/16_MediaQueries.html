@@ -1,0 +1,51 @@
+<!-- Media Queries is way to build the responsive site -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            background-color: red;
+            text-align: center;
+            font-size: 32px;
+            color: white;
+            display:  none; /*nothing will see on desktop */
+        }
+
+        /* when the size of display lies between the 0-500 then the box-1 content show otherwise nothing will show */
+        @media (max-width:300px){
+            #box-1{
+                display: block;
+            }
+        }
+
+        @media (min-width:300px) and (max-width:500px){
+            #box-2{
+                display: block;
+                background-color: #4793b1;
+            }
+        }
+
+        /* these queries will only for screen */
+        @media only screen and (min-width:500px) and (max-width:700px){
+            #box-3{
+                display: block;
+                background-color: #83c545;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+   
+    <div class="box" id="box-1">Mai ek Iphone hu</div>
+    <div class="box" id="box-2">Mai ek Android hu</div>
+    <div class="box" id="box-3">Mai ek earphone hu</div>
+    <div class="box" id="box-4">Mai ek Laptop hu</div>
+    
+   
+</body>
+</html>

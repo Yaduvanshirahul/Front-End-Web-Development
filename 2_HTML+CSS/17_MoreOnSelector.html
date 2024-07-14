@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            background-color: red;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+          }
+
+          /* the properties will apply only on div paragraph not on outermost paragraph  */
+
+          div p{
+            color: rgb(15, 105, 141);
+            font-weight: bold;
+          }
+
+          /* here the only direct child/next element heading4 will change. not the unordered list heading4  */
+          /* div > h4{
+            color: rgb(93, 48, 131);
+            background-color: rgb(70, 186, 148);
+          } */
+
+        div + p{
+            color: black;
+            background-color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>This is more on Selectors</h1>
+    <div class="container">
+        <div class="row">
+            <p>This is a paragraph</p>
+        </div>
+        <div>
+            <p>This is another paragraph</p>
+        </div>
+        <div>
+            <ol>
+                <li id="item"><p>This is another paragraph inside the list</p></li>
+            </ol>
+        </div>
+           
+        </div>
+        <p>This is outmost paragraph</p>
+
+        <div class="box">
+             <div class="row1">
+                <ul>
+                    <li><h4>this is heading</h4></li>
+                <li>this is list item2</li>
+                </ul>
+             </div>
+             <h4>this is anothe heading</h4>
+        </div>
+        <p>This is third method of applying selectors</p>
+            
+  
+</body>
+</html
