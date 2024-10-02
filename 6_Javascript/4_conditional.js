@@ -33,3 +33,11 @@ while(i<12){
     console.log(i);
     i++;
 }
+
+var a =12;
+
+do{
+    console.log("heyy");
+    a++;
+}
+while(a<23)

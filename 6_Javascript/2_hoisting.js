@@ -1,4 +1,4 @@
-/*11. hoisting --> we can use variable and function in any line even if it declare after the uses.
+/* hoisting --> we can use variable and function in any line even if it declare after the uses.
  so means variable and function are hoisted which means their declaration is moved on the top of code. 
 */
 
