@@ -1,6 +1,6 @@
 /*3. type in js --> primitive and reference 
 
-    primitive --> numbers, string, null.undefined,boolean --> the value whose real valued is copied when it is copy
+    primitive --> numbers, string, null, undefined,boolean --> the value whose real valued is copied when it is copy
 
     reference --> [], (), {} --> any value which when copy will not really copy.only that's value reference is passed
     
