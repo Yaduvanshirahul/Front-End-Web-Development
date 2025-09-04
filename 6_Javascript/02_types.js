@@ -1,4 +1,4 @@
-/*3. type in js --> primitive and reference 
+/*3. type in js --> primitive and reference(non primitive) 
 
     primitive --> numbers => 2 to power 53,
                   bigint
@@ -6,6 +6,7 @@
                   null => standalone value
                   undefined
                   boolean => true/false
+                  Symbol
     
           --> the value whose real valued is copied when it is copy
 
