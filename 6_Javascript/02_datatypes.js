@@ -1,4 +1,4 @@
-/*3. type in js --> primitive and reference(non primitive) 
+/*3. type in js --> primitive and reference(non primitive OR object ) 
 
     primitive --> numbers => 2 to power 53,
                   bigint

@@ -32,7 +32,7 @@ console.log(newStringOne.trim());
 const url= 'https://hitesh.com/hitesh%20choudhary'
 
 console.log(url.replace('%20','-'));
-console.log(url.includes('ram')) // to check whether ram is present in url or not
+console.log(url.includes('ram')) // to check whether ram is present in url or not and it will return boolean value
 
 //+++++++++++++++++++++++++++++++++++++++++++++
 
