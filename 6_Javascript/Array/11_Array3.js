@@ -74,4 +74,43 @@ console.log(nwNum); // [13, 16, 19, 22, 25, 31, 361]
 
 // Reduce -> it will reduce the array to a single value based on the condition
 
-  
+const number = [1,2,3,4];
+
+const total = number.reduce(function(acc, currval){
+    console.log(`acc: ${acc} and currval: ${currval}`);
+    return acc+ currval
+}, 0)
+
+console.log(total); // 10
+// acc is accumulator which will accumulate the value and currval is current value of the array
+// 0 is the initial value of the accumulator
+
+//OR 
+
+
+const sum = number.reduce( (acc, curr) => acc + curr, 0 ) // using arrow function
+console.log(sum); // 10
+
+/* ************************************************************************************************************************* */
+
+const shoppinCart = [
+    {
+        itemName: "js course",
+        price: 299
+    },
+     {
+        itemName: "js course",
+        price: 299
+    },
+     {
+        itemName: "js course",
+        price: 299
+    },
+     {
+        itemName: "js course",
+        price: 299
+    }
+]
+
+const totalAmount = shoppingCart.reduce((acc, item) => acc + item.price, 0);
+console.log(totalAmount); // 1196
