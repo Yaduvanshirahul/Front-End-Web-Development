@@ -1,0 +1,54 @@
+<!-- 
+ 
+SELECTOR IN JAVASCRIPT 
+
+
+document.getElementByID => TO get the element using this method
+
+document.querySelector => to select the first element of content like first heading, first element of Unordered list
+
+ document.querySelector('li')
+ <li>​…​</li>​::marker​"one"</li>​ it will select first li only
+const li1 = document.querySelector('li')
+li1.style.background('green')
+li1.style.backgroundColor = "green"
+
+/* ****************************************************************************** */
+
+document.innerHTML => To see the element of HTML 
+
+document.querySelector('li')
+<li>​…​</li>​
+const li1 = document.querySelector('li')
+undefined
+li1.innerHTML
+'one'
+li1.innerHTML = "FIVE" // It will change the value of first li one to five
+'FIVE'
+
+   -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        .bg-clr{
+            background-color: black;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body class="bg-clr">
+    <H1 id="title" class="heading">DOM learning on Chai aur Code</H1>
+    <p id="para1">Learn coding perfectly to become master in it</p>
+
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+    </ul>
+</body>
+</html>
