@@ -1,0 +1,21 @@
+<!-- ONinput event -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black; color: aliceblue;">
+    <input type="text" id="demo" oninput="fun()">
+    <p id="para"></p>
+</body>
+   
+ <script>
+    function fun(){
+    x = document.getElementById("demo").value // here we taking value of input and store it in x
+    document.getElementById("para").innerHTML =x; // here we getting value of x in para
+    }
+    </script>
+</html>

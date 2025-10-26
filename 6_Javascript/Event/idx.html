@@ -1,0 +1,46 @@
+<!-- Learning about Event 
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black; color: aliceblue;">
+    <h2>Amazing image</h2>
+    <div>
+        <ul id="images">
+            <li><img width="200px" height="170px" id="photo1" src="https://images.pexels.com/photos/34115589/pexels-photo-34115589.jpeg" alt="photo"></li>
+            <li><img width="200px" height="170px" id="photo2" src="https://images.pexels.com/photos/34141799/pexels-photo-34141799.jpeg" alt=""></li>
+            <li><img width="200px" height="170px" id="photo3" src="https://images.pexels.com/photos/34188713/pexels-photo-34188713.jpeg" alt=""></li>
+            <li><img width="200px" height="170px" id="photo4" src="https://images.pexels.com/photos/34137034/pexels-photo-34137034.jpeg" alt="" onclick="alert('cat')"></li> <!-- this is not a feasble way -->  
+            <li><img width="200px" height="170px" id="photo5" src="https://images.pexels.com/photos/34334838/pexels-photo-34334838.jpeg" alt=""></li>
+            <li><a id="google" href="https://www.google.com/"> Google website</a></li>
+        </ul>
+    </div>
+</body>
+
+<script>
+  document.getElementById('photo3').onclick=function(){
+    alert("cat is sit infront of door") // this also not a valid way becz it's doesn't provide more features
+  }
+
+  document.getElementById('images').addEventListener('click', function(e) {
+    
+    console.log("click inside the ul")
+  }, false) // in place of false if we take true then it's called capturing mean parent to child propagation
+
+  document.getElementById('photo2').addEventListener('click', function(e) {
+    console.log("click on the lady with hat") // event propogation called bubbling mean bottom to up output show AND if we use true inplace of false then capturing work means top to bottom
+   // e.stopPropagation() // for stop the bubbling method
+  }, false)
+
+  document.getElementById('google').addEventListener('click' , function(e){
+              e.preventDefault(); // to prevent to openthe google website
+              e.stopPropagation(); // to prevent the bubbling 
+              console.log("google clicked")
+  }, false)
+
+</script>
+</html>
