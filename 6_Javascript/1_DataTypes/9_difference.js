@@ -7,7 +7,7 @@ NOTE: we use both.we don't have to install html and css js they are preinstalled
 
 */
 
-/* var: var: var functionn scoped hota hai => var apne parent func main khi bhi use ho skta hai. var adds itself to window object */
+/* var: var: var function scoped hota hai => var apne parent func main khi bhi use ho skta hai. var adds itself to window object */
 
 function abcd(){
     for( var i=0;i<12;i++){

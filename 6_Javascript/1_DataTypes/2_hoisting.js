@@ -14,6 +14,8 @@ console.log(a); // here 'undefined' value of a is print in other language it sho
 
 a =12;
 
+console.log(b)
+var b;
 /* 
 there is difference between undefined and not-defined 
    
