@@ -1,0 +1,27 @@
+<!-- SetTimeout -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur Code</h1>
+    <button id="stop">stop</button>
+</body>
+<script>
+    const changeText = function(){
+        document.querySelector('h1').innerHTML= "Best JS series"
+    }
+
+    const changeMe = setTimeout(changeText, 2000) // here we change the h1 heading from Chai aur Code to Best JS serires
+
+    document.querySelector('#stop').addEventListener('click' ,function(){
+        clearTimeout(changeMe) //If you click it before 2 seconds, it will call clearTimeout(changeMe) — this cancels the scheduled text change heading will remain “Chai aur Code”
+        // document.querySelector('h1').innerHTML = "Chai aur Code"; // then only change text change
+        console.log("STOPPED") /* If you click it after 2 seconds, then The text has already changed to “Best JS series” clearTimeout(changeMe) does nothing, because the timeout already executed */
+    })
+</script>
+</html>
