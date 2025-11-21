@@ -1,6 +1,9 @@
+import Chai from "./Chai";
+
 export const App = ()=> {
   return (
     <div>
+      <Chai/>  
       <div>
         <img src="/Aladdin.jpeg" alt="movie" width="40%" height="40%" />
       </div>
@@ -16,7 +19,7 @@ export default App;
 
 
 // todo
-
+  
 //? Each JSX experssion must have one parent element, which means if you try to return multiple elements, React will throw an error
 
 //? Every JSX tag needs to be closed. You can use self-closing tags for elements that don't have children, e.g. <img src="url"/>
