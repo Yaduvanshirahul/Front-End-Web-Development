@@ -19,9 +19,9 @@ function App() {
     <>
      <h1>Creating counter Project</h1>
      <h2>counter Value: {counter}</h2>
-     <button class="button1" onClick={addvalue}>Add value {counter}</button>
+     <button className="button1" onClick={addvalue}>Add value {counter}</button>
      <br />
-     <button class="button1" onClick={removevalue}>Remove value {counter}</button>
+     <button className="button1" onClick={removevalue}>Remove value {counter}</button>
      <footer>Counter: {counter}</footer>
     </>
   )
